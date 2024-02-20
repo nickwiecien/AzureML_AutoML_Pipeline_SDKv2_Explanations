@@ -7,7 +7,7 @@ Contained within this repository is a set of notebooks designed to perform the f
 - Train a custom regression model using AutoML
 - Evaluate newly trained models against an existing "champion" model against a consistent hold out dataset - the "challenger" is registered if it performs better
 - Score data using the model loaded from a CSV in blob storage
-- Compute local explanations for each model prediction and append these to an output dataset which is saved into blob storage
+- Compute local explanations (using SHAP) for each model prediction and append these to an output dataset which is saved into blob storage
 
 There are three notebooks within this repo that are numbered and should be run in sequence. Notebooks 02/03 contain definitions for training and inferencing pipelines, respectively which handle all training and scoring operations and both read and write to and from Azure Blob Storage.
 
